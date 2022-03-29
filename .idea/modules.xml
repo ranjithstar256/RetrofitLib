@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ref.iml" filepath="$PROJECT_DIR$/.idea/modules/ref.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ref.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ref.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RetrofitLib.iml" filepath="$PROJECT_DIR$/.idea/modules/RetrofitLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RetrofitLib.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RetrofitLib.app.iml" />
     </modules>
   </component>
 </project>

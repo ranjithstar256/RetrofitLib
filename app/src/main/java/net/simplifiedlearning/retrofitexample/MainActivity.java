@@ -22,15 +22,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.listViewHeroes);
-        getHeroes();
+        getHe();
     }
 
-    private void getHeroes() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(Api.BASE_URL).addConverterFactory(GsonConverterFactory.create())
+    private void getHe() {
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(Api.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
                 //Here we are using the GsonConverterFactory to directly convert json data to object
                 .build();
+
         Api api = retrofit.create(Api.class);
+
         Call<List<Hero>> call = api.getHeroes();
+
         call.enqueue(new Callback<List<Hero>>() {
             @Override
             public void onResponse(Call<List<Hero>> call, Response<List<Hero>> response) {
